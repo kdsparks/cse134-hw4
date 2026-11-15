@@ -19,5 +19,21 @@
             </ul>
         </nav>
     </header>
+    <h1>Form With No JavaScript</h1>
+    <form action="https://httpbin.org/post" method="post">
+        <label for="name">Name:
+            <input type="text" name="name" id="name" autocomplete="name" placeholder="John Doe">
+        </label>
+        <label for="email">Email:
+            <input type="email" name="email" id="email" autocomplete="email" placeholder="thomas@example.com">
+        </label>
+        <label for="comments">Comments:
+            <textarea name="comments" id="comments" placeholder="I'd like to hire you."></textarea>
+        </label>
+        <label for="possible_bot">
+            <input type="hidden" name="possible_bot" id="possible_bot" value="true">
+        </label>
+        <button type="submit">Submit</button>
+    </form>
 </body>
 </html>
