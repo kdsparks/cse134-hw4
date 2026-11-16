@@ -78,6 +78,11 @@
     padding: 0;
     list-style: none;
   }
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 @media (prefers-reduced-motion: no-preference) {
