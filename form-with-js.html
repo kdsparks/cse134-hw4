@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Without JavaScript</title>
+    <link rel="stylesheet" href="assets/styles/global.css">
+</head>
+<body>
+    <header>
+        <a href="/" rel="home">Home</a>
+        <nav>
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="now.html">Now</a></li>
+                <li><a href="making.html">Making</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="form-no-js.html">No-JS Form</a></li>
+                <li><a href="form-no-js.html">JS Form</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hgroup>
+        <h1>Contact Me</h1>
+        <p>Feel free to get in touch if you have any questions or things you'd like to share.</p>
+    </hgroup>
+    <form action="https://httpbin.org/post" method="post">
+        <label for="name">Name (required. 1-100 characters)</label>
+        <input type="text" name="name" id="name" autocomplete="name" placeholder="John Doe" required minlength="1" maxlength="100">
+        <label for="email">Email (required)</label>
+        <input type="email" name="email" id="email" autocomplete="email" placeholder="thomas@example.com" required>
+        <label for="comments">Comments (required. 10-10,000 characters)</label>
+        <textarea name="comments" id="comments" placeholder="I'd like to hire you." required minlength="10" maxlength="1000" rows="5"></textarea>
+        <label for="possible_bot"></label>
+        <input type="hidden" name="possible_bot" id="possible_bot" value="true">
+        <button type="submit">Send Message</button>
+    </form>
+</body>
+</html>
