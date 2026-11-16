@@ -99,6 +99,12 @@
   textarea:user-valid {
     border-color: var(--correct);
   }
+
+  button {
+    padding: var(--small-space);
+    background-color: var(--accent-two-light);
+    color: var(--text);
+  }
 }
 
 @layer layout {
@@ -141,6 +147,11 @@
   form {
     display: flex;
     flex-direction: column;
+    padding: var(--medium-space);
+  }
+
+  button {
+    width: fit-content;
   }
 }
 

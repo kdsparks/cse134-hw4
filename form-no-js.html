@@ -19,7 +19,10 @@
             </ul>
         </nav>
     </header>
-    <h1>Form With No JavaScript</h1>
+    <hgroup>
+        <h1>Contact Me</h1>
+        <p>Feel free to get in touch if you have any questions or things you'd like to share.</p>
+    </hgroup>
     <form action="https://httpbin.org/post" method="post">
         <label for="name">Name (required. 1-100 characters)</label>
         <input type="text" name="name" id="name" autocomplete="name" placeholder="John Doe" required minlength="1" maxlength="100">
@@ -29,7 +32,7 @@
         <textarea name="comments" id="comments" placeholder="I'd like to hire you." required minlength="10" maxlength="1000" rows="5"></textarea>
         <label for="possible_bot"></label>
         <input type="hidden" name="possible_bot" id="possible_bot" value="true">
-        <button type="submit">Submit</button>
+        <button type="submit">Send Message</button>
     </form>
 </body>
 </html>
