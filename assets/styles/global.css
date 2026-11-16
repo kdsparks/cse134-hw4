@@ -1,13 +1,12 @@
-@layer reset, base, layout;
+@layer reset, tokens, base, layout;
 
 @layer reset {
   *, *::before, *::after { box-sizing: border-box; }
   body { margin: 0; }
 }
 
-@layer base {
+@layer tokens {
   :root {
-    color-scheme: light dark;
     --text: hsl(160, 69%, 10%);
     --surface: hsl(60, 22%, 96%);
     --accent-dark: hsl(160, 53%, 21%);
@@ -16,10 +15,13 @@
     --accent-two-light: hsla(25, 43%, 65%, 0.4);
     --space: 1rem;
     --measure: 65ch;
-    --footer-margin: 5rem;
+    --large-space: 5rem;
   }
+}
 
+@layer base {
   body {
+    color-scheme: light dark;
     font: 1.2rem/1.5 "avenir next", sans-serif;
     color: var(--text);
     background: var(--surface);
@@ -68,7 +70,7 @@
   }
 
   footer {
-    margin-block-start: var(--footer-margin);
+    margin-block-start: var(--large-space);
   }
 
   footer nav ul {
